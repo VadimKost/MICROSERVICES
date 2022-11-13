@@ -1,0 +1,22 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-new
+  labels:
+    app: service-new
+spec:
+  replicas: 1                      # кількість екземплярів Pod, що буде створено цим Deployment
+  selector:
+    matchLabels:
+      app: service-new               # селектор по якому Deployment зв'язаний з Pod
+  template:
+    metadata:
+     labels:
+       app: service-new               # мітка Pod по якому вона буде зв'язана з Deployment та Service
+    spec:
+      containers:
+        - name: service-new # ім'я контейнеру
+          image: service-new:latest      # образ Docker
+          imagePullPolicy: IfNotPresent   # вказує k8s, що образ не потрібно завантажувати (варто використовувати лише для випадків, коли образи локальні)
+          ports:
+            - containerPort: 8080  # порт по якому можна звертатись до поди
