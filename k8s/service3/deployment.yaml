@@ -1,0 +1,22 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: denysdev
+  labels:
+    app: denysdev
+spec:
+  replicas: 1                      # кількість екземплярів Pod, що буде створено цим Deployment
+  selector:
+    matchLabels:
+      app: denysdev               # селектор по якому Deployment зв'язаний з Pod
+  template:
+    metadata:
+     labels:
+       app: denysdev               # мітка Pod по якому вона буде зв'язана з Deployment та Service
+    spec:
+      containers:
+        - name: denysdev # ім'я контейнеру
+          image: denysdev:latest      # образ Docker
+          imagePullPolicy: IfNotPresent   # вказує k8s, що образ не потрібно завантажувати (варто використовувати лише для випадків, коли образи локальні)
+          ports:
+            - containerPort: 8080  # порт по якому можна звертатись до поди
