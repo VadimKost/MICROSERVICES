@@ -6,6 +6,7 @@ const UNAVAILABLE = "UNAVAILABLE"
 function App() {
   const [service1state, service1SetState] = useState(UNKNOWN);
   const [service2state, service2SetState] = useState(UNKNOWN);
+  const [service4state, service4SetState] = useState(UNKNOWN);
 
 // post argument s
   useEffect(() => {
@@ -35,10 +36,24 @@ function App() {
     });
   }, []);
 
+
+    useEffect(() => {
+        fetch('/api/service4/')
+            .then((response) => {
+                return response.text();
+            })
+            .then((data) => {
+                service4SetState(data);
+            }).catch(() => {
+            service4SetState(UNAVAILABLE)
+        });
+    }, []);
+
   return (
     <div>
         service1 status: { service1state }<br/>
-        service2 status: { service2state }
+        service2 status: { service2state }<br/>
+        service4 status: { service4state}
     </div>
   );
 }
