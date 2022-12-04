@@ -14,9 +14,23 @@ spec:
       labels:
         app: spring
     spec:
+      initContainers:
+        - name: run-migrations
+          image: service1-migrations:0.1
+          command: [ "migrate", "-path", "/migrations", "-database",  "$(POSTGRESQL_URL)", "goto", "$(VERSION)" ] # CLI команда запуску міграцій, де $(POSTGRESQL_URL) і $(VERSION) змінні середовища
+          env:
+            - name: POSTGRESQL_URL
+              value: "postgres://postgres:password@postgres:5432/postgres?sslmode=disable"
+            - name: VERSION
+              value: "20211128095755"
       containers:
         - name: spring
           image: spring:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: service1-config
+            - secretRef:
+                name: service1-secret

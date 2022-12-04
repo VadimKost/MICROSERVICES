@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="consoleApp" target="1.5" />
-      <module name="service4" target="17" />
+      <module name="service4" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

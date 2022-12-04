@@ -1,20 +1,28 @@
 package com.example.service1;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/service1")
 public class Controller {
+
+    @Autowired
+    ContactBookRepository repository;
+
     @GetMapping("/")
-    public String home() {
-        return Service1Application.S.vadim.toString();
+    public List<Contacts> home() {
+        List<Contacts> contacts = (List<Contacts>) repository.findAll();
+        System.out.println(contacts);
+        return contacts;
     }
 
     @PostMapping("/")
-    public String home(@RequestParam String s) {
-        System.out.println(s);
-        Service1Application.S.vadim.add(s);
-        return Service1Application.S.vadim.toString();
+    public Contacts home(@RequestBody Contacts c) {
+        Contacts contact = repository.save(c);
+        return contact;
     }
 }
 

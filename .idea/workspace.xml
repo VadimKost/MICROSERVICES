@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2123da4b-5e3e-478e-934d-8cebe162ae97" name="Changes" comment="suka blat ura" />
+    <list default="true" id="2123da4b-5e3e-478e-934d-8cebe162ae97" name="Changes" comment="suka blat ura">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service4/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +26,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/k8s/service1/ingress.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/k8s/service2/ingress.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/k8s/service3/ingress.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/k8s/service4/deployment.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/k8s/service4/ingress.yaml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,17 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Vadim/IdeaProjects/mserv/k8s/service1",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "342acedcac4a904493d03288d39668af"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vadim\IdeaProjects\mserv\k8s\service1" />
+      <recent name="C:\Users\Vadim\IdeaProjects\mserv\k8s\postgres" />
       <recent name="C:\Users\Vadim\IdeaProjects\mserv" />
       <recent name="C:\Users\Vadim\IdeaProjects\mserv\k8s" />
-      <recent name="C:\Users\Vadim\IdeaProjects\mserv\k8s\service1" />
       <recent name="C:\Users\Vadim\IdeaProjects\mserv\service1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -77,8 +93,13 @@
       <updated>1668359460325</updated>
       <workItem from="1668359462312" duration="7125000" />
       <workItem from="1668367553480" duration="397000" />
-      <workItem from="1668368342412" duration="10787000" />
+      <workItem from="1668368342412" duration="11308000" />
       <workItem from="1668712416527" duration="388000" />
+      <workItem from="1668941913957" duration="3305000" />
+      <workItem from="1669057561995" duration="30000" />
+      <workItem from="1669097736638" duration="1565000" />
+      <workItem from="1670161620014" duration="7166000" />
+      <workItem from="1670171711002" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668376208351</created>
@@ -101,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668379105802</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="suka blat ura">
+      <created>1668379362987</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668379362987</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +157,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -138,6 +165,7 @@
       <path value="$PROJECT_DIR$/service2" />
     </ignored-roots>
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="suka blat ura" />
+    <option name="LAST_COMMIT_MESSAGE" value="suka blat ura" />
   </component>
 </project>
