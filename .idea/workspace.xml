@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2123da4b-5e3e-478e-934d-8cebe162ae97" name="Changes" comment="suka blat ura">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service4/pom.xml" afterDir="false" />
+    <list default="true" id="2123da4b-5e3e-478e-934d-8cebe162ae97" name="Changes" comment="fuck">
+      <change afterPath="$PROJECT_DIR$/service1/src/main/resources/db/migration/V1_0_0__init_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service1/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/service1/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service1/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +44,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Vadim/IdeaProjects/mserv/k8s/service1",
+    "last_opened_file_path": "C:/Users/Vadim/IdeaProjects/mserv/service1/src/main/resources",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "spring.configuration.checksum": "342acedcac4a904493d03288d39668af"
   }
 }]]></component>
@@ -99,7 +98,7 @@
       <workItem from="1669057561995" duration="30000" />
       <workItem from="1669097736638" duration="1565000" />
       <workItem from="1670161620014" duration="7166000" />
-      <workItem from="1670171711002" duration="25000" />
+      <workItem from="1670171711002" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668376208351</created>
@@ -129,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668379362987</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fuck">
+      <created>1670171853651</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670171853651</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +172,7 @@
     </ignored-roots>
     <MESSAGE value="init" />
     <MESSAGE value="suka blat ura" />
-    <option name="LAST_COMMIT_MESSAGE" value="suka blat ura" />
+    <MESSAGE value="fuck" />
+    <option name="LAST_COMMIT_MESSAGE" value="fuck" />
   </component>
 </project>
