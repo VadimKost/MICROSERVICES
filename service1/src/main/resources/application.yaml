@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${BOOKING_POSTGRES_SERVICE_HOST:localhost}:${BOOKING_POSTGRES_SERVICE_PORT:5432}/microbase
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:123}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
